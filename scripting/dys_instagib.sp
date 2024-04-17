@@ -7,7 +7,7 @@ bool g_bEnabled;
 public Plugin myinfo = {
 	name = "Dys MK Instagib",
 	description = "Dys MK Instagib",
-	author = "bauxite",
+	author = "bauxite, rain",
 	version = "0.1.0",
 	url = "https://github.com/bauxiteDYS/SM-DYS-Instagib",
 };
