@@ -84,7 +84,7 @@ public Action OnTakeDamage(int victim, int& attacker, int& inflictor, float& dam
 		damage = 500.0;
 		
 		return Plugin_Changed;
-    }	
+	}	
 	
 	return Plugin_Continue;
 }
