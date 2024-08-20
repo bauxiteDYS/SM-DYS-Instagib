@@ -3,4 +3,4 @@ Sourcemod plugin for Dystopia to enable Instagib mode
 
 Use `!instagib` command to toggle MK instagib mode, disabled by default.
 
-Note: May skew stats for now, maybe use `dys_stats_enabled 0`
+Note: May skew stats for now, maybe use `dys_stats_enabled 0`, `map_restart` will probably be required for this to take effect.
