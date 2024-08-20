@@ -8,7 +8,7 @@ public Plugin myinfo = {
 	name = "Dys MK Instagib",
 	description = "Dys MK Instagib",
 	author = "bauxite, rain",
-	version = "0.1.0",
+	version = "0.2.0",
 	url = "https://github.com/bauxiteDYS/SM-DYS-Instagib",
 };
 
@@ -56,6 +56,17 @@ public Action CmdToggleInstagib(int client, int args)
 	
 	PrintToChatAll("MK instagib mode is %s", g_bEnabled ? "enabled" : "disabled");
 	PrintToConsoleAll("MK instagib mode is %s", g_bEnabled ? "enabled" : "disabled");
+	
+	if(g_bEnabled)
+	{
+		ServerCommand("dys_stats_enabled 0");
+	}
+	else
+	{
+		ServerCommand("dys_stats_enabled 1");
+	}
+	
+	ServerCommand("map_restart");
 	
 	return Plugin_Continue;
 }
